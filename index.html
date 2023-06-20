@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Pacifico', cursive;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            background: url('img/gym.jpg');
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .left {
+            display: inline-block;
+            border: 0px solid red;
+            position: absolute;
+            left: 60px;
+            top: 18px;
+            margin: 3px;
+            line-height:20px;
+        }
+
+        .left div{
+            line-height: 17px;
+            font-size: 17px;
+            text-align: left;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin:29px auto;
+            border: 0px solid green;
+            font-size: 15px;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 21px;
+            display: inline-block;
+            border: 0px solid teal;
+
+        }
+
+        .navbar li {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 10px;
+        }
+
+
+        .navbar li a.active {
+            text-decoration: underline;
+            color: bisque;
+        }
+
+        .left img {
+            width: 87px;
+            line-height: 20px;
+           
+        }
+
+        .btn {
+            font-family: 'Pacifico', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: aqua;
+
+        }
+        .container{
+            border: 0px solid white;
+            margin: 200px 110px;
+            padding: 75px;
+            width: 30%;
+            border-radius: 10px;
+
+    
+        }
+        .Form-group input{
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            display: block;
+            width: 455px;
+            padding: 0px;
+            border: 2px solid rgb(83, 69, 69);
+            margin:11px auto;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+     .container button{
+            display: block;
+            width: 106%;
+            margin: 20px auto;
+             
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/43350.jpg" alt="">
+            <div>Crazy Fitness</div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">FitnessCenter</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of delhi now</h1>
+        <form action="noaction.php">
+           <div class="Form-group">
+              <input type="text" name="" placeholder="Enter your Name">
+           </div>
+           <div class="Form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+         </div>
+         <div class="Form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+         </div>
+         <div class="Form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+         </div>
+         <div class="Form-group">
+            <input type="text" name="" placeholder="Enter your PhoneNumber">
+         </div>
+         <div class="Form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+         </div>
+         <button class="btn">Submit Now!</button>
+        </form>
+    </div>
+</body>
+</html>
